@@ -1,10 +1,7 @@
 package com.company.controllers;
 
 import com.company.models.Product;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -34,7 +31,7 @@ public class PracticeController {
     }
 
     @PostMapping("/create")
-    public void createProduct(Product product){
+    public void createProduct(@RequestBody Product product){
         System.out.println(product.name());
         productMap.put(product.name(),product);
     }
