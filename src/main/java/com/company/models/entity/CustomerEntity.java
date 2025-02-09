@@ -1,5 +1,6 @@
-package com.company.models;
+package com.company.models.entity;
 
+import com.company.models.Gender;
 import jakarta.persistence.*;
 
 @Entity
