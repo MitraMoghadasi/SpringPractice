@@ -12,7 +12,7 @@ public class CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
     public CustomerEntity getId(Integer id) {
-        Optional<CustomerEntity> customerEntityOptional = customerRepository.findById(id);
+        Optional<CustomerEntity> customerEntityOptional = customerRepository.findById(id);// output of findById(id) is optional type
         return customerEntityOptional.get();
     }
 
@@ -40,6 +40,13 @@ public class CustomerService {
             customerRepository.delete(customerEntityOptional.get());
         }
 
+        /*
+        Tozihe Optional
+        Optional<CustomerEntity> optional = customerRepository.findById(100000);
+        if (optional.isPresent()) {
+            Gender g = optional.get().getGender();
+        }
+         */
 
         }
 
