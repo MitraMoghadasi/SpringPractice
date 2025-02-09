@@ -21,4 +21,28 @@ public class OrdersEntity {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    public String getOrderDate() {
+        return orderDate;
+    }
+
+    public void setOrderDate(String orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public BigDecimal getAmountValue() {
+        return amountValue;
+    }
+
+    public void setAmountValue(BigDecimal amountValue) {
+        this.amountValue = amountValue;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
 }
